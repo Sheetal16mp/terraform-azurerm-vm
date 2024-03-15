@@ -16,12 +16,6 @@ variable "admin" {
     public_key = ""
   }
 }
-variable "namespace" {
-  description = "Prefix for resource names"
-}
-variable "name" {
-  description = "Name of the service"
-}
 variable "location" {
   description = "Resource location. To see full list run 'az account list-locations'"
 }
