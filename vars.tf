@@ -16,7 +16,6 @@ variable "admin" {
     public_key = ""
   }
 }
-
 variable "namespace" {
   description = "Prefix for resource names"
 }
