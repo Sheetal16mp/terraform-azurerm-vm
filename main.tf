@@ -7,8 +7,7 @@
  }
 # Resource group
 resource "azurerm_resource_group" "default" {
-  name = var.name
-  location = var.location
+    location = var.location
 }
 
 # Public IP
