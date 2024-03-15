@@ -6,7 +6,8 @@
    tenant_id       = var. tenant_id
  }
 # Resource group
-resource "azurerm_resource_group" "default" {
+resource "azurerm_resource_group" "default" 
+    name = var.name
     location = var.location
 }
 
@@ -14,7 +15,7 @@ resource "azurerm_resource_group" "default" {
 resource "azurerm_public_ip" "default" {
   name = var.name
   location = var.location
-  resource_group_name =azurerm_resource_group.default.name
+  resource_group_name = azurerm_resource_group.default.name
   #public_ip_address_allocation = var.allocation_method
    allocation_method   = "Dynamic"
 }
